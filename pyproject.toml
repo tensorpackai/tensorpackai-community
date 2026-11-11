@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel", "pybind11>=2.10.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tensorpackai-community"
+version = "0.1.0"
+description = "Silicon & Node-Level LLM Runtime Energy Optimizer for vLLM & Triton Inference Server"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "Apache-2.0"
+authors = [
+    {name = "TensorPackAI Team", email = "dev@tensorpackai.com"}
+]
+keywords = [
+    "vllm",
+    "vllm-optimization",
+    "vllm-energy",
+    "triton-inference-server",
+    "llm-inference",
+    "gpu-energy-optimization",
+    "gpu-power-management",
+    "nvml",
+    "nvml-exporter",
+    "prometheus-exporter",
+    "joules-per-token",
+    "tokens-per-watt",
+    "dvfs",
+    "gpu-frequency-scaling",
+    "green-computing",
+    "green-ai",
+    "sustainable-ai",
+    "datacenter-efficiency",
+    "nvidia-h100",
+    "nvidia-a100",
+    "nvidia-b200"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: System :: Hardware",
+    "Topic :: System :: Monitoring",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: C++",
+    "Operating System :: POSIX :: Linux"
+]
+dependencies = [
+    "prometheus_client>=0.17.0",
+    "tabulate>=0.9.0",
+    "click>=8.0.0",
+]
+
+[project.urls]
+Homepage = "https://tensorpackai.com"
+Documentation = "https://tensorpackai.com/docs"
+Repository = "https://github.com/tensorpackai/tensorpackai-community"
+Issues = "https://github.com/tensorpackai/tensorpackai-community/issues"
+
+[project.scripts]
+tensorpack-tune = "tensorpack.cli.tune:main"
+tensorpack-exporter = "tensorpack.exporter.prometheus:main"
