@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/logo.jpg" width="110" alt="TensorPackAI Logo" />
+
 # TensorPackAI (Community Edition)
 ### Silicon & Node-Level LLM Runtime Energy Optimizer for vLLM & NVIDIA Triton
 
