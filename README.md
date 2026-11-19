@@ -185,7 +185,7 @@ While the Community edition provides essential hardware telemetry, Prometheus en
   - **Guarantees P90 Inter-Token Latency (ITL) < 20 ms** while reducing net cluster energy by **22.3% – 58.1%** (achieving up to **2.73 Tokens/Joule**, a **2.39× efficiency gain**).
 
 To request an Enterprise trial or benchmark evaluation for your datacenter:
-👉 Visit [tensorpackai.com](https://tensorpackai.com) or contact `oguzhan.sereflisan@gmail.com`.
+👉 Visit [tensorpackai.com](https://tensorpackai.com) 
 
 ---
 
