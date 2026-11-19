@@ -75,7 +75,13 @@ Because dynamic CMOS power dissipation scales quadratically with supply voltage 
 
 ### 1. Installation
 
-Install via pip directly from the repository:
+Install via pip directly from PyPI:
+
+```bash
+pip install tensorpackai
+```
+
+Or install from source:
 
 ```bash
 git clone https://github.com/tensorpackai/tensorpackai-community.git
