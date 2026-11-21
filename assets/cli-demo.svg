@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 430" width="100%" height="auto" style="background: transparent; font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="12" in="SourceAlpha"/>
+      <feOffset dx="0" dy="8"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.45"/></feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#161B22"/>
+      <stop offset="100%" stop-color="#0D1117"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Window Container with Shadow -->
+  <g filter="url(#shadow)">
+    <rect x="20" y="15" width="840" height="390" rx="10" ry="10" fill="#0D1117" stroke="#30363D" stroke-width="1.5"/>
+    
+    <!-- Window Titlebar -->
+    <path d="M 20 25 C 20 19.5 24.5 15 30 15 L 850 15 C 855.5 15 860 19.5 860 25 L 860 52 L 20 52 Z" fill="url(#headerGrad)"/>
+    <line x1="20" y1="52" x2="860" y2="52" stroke="#30363D" stroke-width="1"/>
+
+    <!-- Window Controls (macOS style) -->
+    <circle cx="42" cy="33.5" r="6" fill="#FF5F56" stroke="#E0443E" stroke-width="0.5"/>
+    <circle cx="62" cy="33.5" r="6" fill="#FFBD2E" stroke="#DEA123" stroke-width="0.5"/>
+    <circle cx="82" cy="33.5" r="6" fill="#27C93F" stroke="#1AAB29" stroke-width="0.5"/>
+
+    <!-- Window Title Text -->
+    <text x="440" y="37" fill="#8B949E" font-size="12" font-weight="600" text-anchor="middle" letter-spacing="0.5">terminal — tensorpack-tune status (NVIDIA H100 SXM5 80GB)</text>
+
+    <!-- Terminal Prompt & Command -->
+    <g font-size="13" font-weight="500">
+      <text x="44" y="82">
+        <tspan fill="#58A6FF">admin@h100-node01</tspan><tspan fill="#8B949E">:</tspan><tspan fill="#7EE787">~</tspan><tspan fill="#8B949E">$ </tspan><tspan fill="#FFFFFF" font-weight="600">pip install tensorpackai &amp;&amp; tensorpack-tune status</tspan>
+      </text>
+
+      <text x="44" y="112" fill="#8B949E">TensorPackAI C++17 Dynamic Engine (Fast NVML v550.54.14 | Hopper Architecture)</text>
+      <text x="44" y="132" fill="#58A6FF">Phase-Aware DVFS Governor: <tspan fill="#3FB950" font-weight="bold">ACTIVE (DECODE_PACED)</tspan> | Workload: vLLM Llama-3.1-70B</text>
+
+      <!-- Table Header -->
+      <text x="44" y="166" fill="#8B949E" font-size="11">┌─────┬───────────────────────────┬─────────┬─────────┬──────────┬──────────┬────────────────┬─────────┐</text>
+      <text x="44" y="184" fill="#C9D1D9" font-size="11" font-weight="bold">│ GPU │ Device Name               │  Power  │  Temp   │ SM Clock │Mem Clock │ VRAM Occupied  │ SM Util │</text>
+      <text x="44" y="200" fill="#8B949E" font-size="11">├─────┼───────────────────────────┼─────────┼─────────┼──────────┼──────────┼────────────────┼─────────┤</text>
+
+      <!-- Table Row 0 -->
+      <text x="44" y="218" font-size="11">
+        <tspan fill="#C9D1D9">│  </tspan><tspan fill="#58A6FF">0</tspan><tspan fill="#C9D1D9">  │ NVIDIA H100 80GB HBM3     │ </tspan><tspan fill="#3FB950" font-weight="bold">285.0 W</tspan><tspan fill="#C9D1D9"> │  52 °C  │ </tspan><tspan fill="#58A6FF">1095 MHz</tspan><tspan fill="#C9D1D9"> │ 2619 MHz │ 41.2 / 80.0 GB │   </tspan><tspan fill="#79C0FF">74%</tspan><tspan fill="#C9D1D9">   │</tspan>
+      </text>
+
+      <!-- Table Row 1 -->
+      <text x="44" y="236" font-size="11">
+        <tspan fill="#C9D1D9">│  </tspan><tspan fill="#58A6FF">1</tspan><tspan fill="#C9D1D9">  │ NVIDIA H100 80GB HBM3     │ </tspan><tspan fill="#3FB950" font-weight="bold">282.0 W</tspan><tspan fill="#C9D1D9"> │  51 °C  │ </tspan><tspan fill="#58A6FF">1095 MHz</tspan><tspan fill="#C9D1D9"> │ 2619 MHz │ 40.8 / 80.0 GB │   </tspan><tspan fill="#79C0FF">72%</tspan><tspan fill="#C9D1D9">   │</tspan>
+      </text>
+
+      <!-- Table Row 2 -->
+      <text x="44" y="254" font-size="11">
+        <tspan fill="#C9D1D9">│  </tspan><tspan fill="#58A6FF">2</tspan><tspan fill="#C9D1D9">  │ NVIDIA H100 80GB HBM3     │ </tspan><tspan fill="#3FB950" font-weight="bold">288.0 W</tspan><tspan fill="#C9D1D9"> │  53 °C  │ </tspan><tspan fill="#58A6FF">1095 MHz</tspan><tspan fill="#C9D1D9"> │ 2619 MHz │ 41.0 / 80.0 GB │   </tspan><tspan fill="#79C0FF">76%</tspan><tspan fill="#C9D1D9">   │</tspan>
+      </text>
+
+      <!-- Table Row 3 -->
+      <text x="44" y="272" font-size="11">
+        <tspan fill="#C9D1D9">│  </tspan><tspan fill="#58A6FF">3</tspan><tspan fill="#C9D1D9">  │ NVIDIA H100 80GB HBM3     │ </tspan><tspan fill="#3FB950" font-weight="bold">284.0 W</tspan><tspan fill="#C9D1D9"> │  52 °C  │ </tspan><tspan fill="#58A6FF">1095 MHz</tspan><tspan fill="#C9D1D9"> │ 2619 MHz │ 40.9 / 80.0 GB │   </tspan><tspan fill="#79C0FF">73%</tspan><tspan fill="#C9D1D9">   │</tspan>
+      </text>
+      <text x="44" y="288" fill="#8B949E" font-size="11">└─────┴───────────────────────────┴─────────┴─────────┴──────────┴──────────┴────────────────┴─────────┘</text>
+
+      <!-- Telemetry Readout Highlights Box -->
+      <rect x="44" y="304" width="792" height="68" rx="6" fill="#161B22" stroke="#3FB950" stroke-width="1" stroke-dasharray="3 3"/>
+      
+      <text x="64" y="328" font-size="12">
+        <tspan fill="#3FB950" font-weight="bold">⚡ REAL-TIME TELEMETRY:</tspan>
+        <tspan fill="#C9D1D9"> Measured Joules/Token: </tspan>
+        <tspan fill="#79C0FF" font-weight="bold">0.366 J/tok</tspan>
+        <tspan fill="#8B949E"> (vs 0.881 J/tok Baseline </tspan>
+        <tspan fill="#3FB950" font-weight="bold">▼ -58.1% Dynamic Energy Drop</tspan>
+        <tspan fill="#8B949E">)</tspan>
+      </text>
+      
+      <text x="64" y="352" font-size="11" fill="#8B949E">
+        <tspan fill="#58A6FF">●</tspan> Prometheus Exporter streaming live on <tspan fill="#C9D1D9">http://0.0.0.0:9100/metrics</tspan> &bull; P90 ITL SLA Violation: <tspan fill="#3FB950">0.0%</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

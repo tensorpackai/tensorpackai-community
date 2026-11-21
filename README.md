@@ -6,14 +6,22 @@
 ### Silicon & Node-Level LLM Runtime Energy Optimizer for vLLM & NVIDIA Triton
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![PyPI version](https://img.shields.io/pypi/v/tensorpackai.svg?color=blue)](https://pypi.org/project/tensorpackai/)
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
 [![C++ Standard](https://img.shields.io/badge/c%2B%2B-17-green.svg)](https://isocpp.org/)
 [![Prometheus](https://img.shields.io/badge/metrics-Prometheus-orange.svg)](https://prometheus.io/)
 [![Hardware Support](https://img.shields.io/badge/GPUs-NVIDIA%20B200%20%7C%20H100%20%7C%20A100%20%7C%20A10G%20%7C%20T4-76B900.svg)](https://www.nvidia.com)
+[![GitHub stars](https://img.shields.io/github/stars/tensorpackai/tensorpackai-community?style=social)](https://github.com/tensorpackai/tensorpackai-community)
 
 **Real-time GPU power telemetry, Joules-per-Token exporter, and silicon frequency management designed specifically for generative foundation model serving.**
 
 [Official Website](https://tensorpackai.com) • [Documentation](https://tensorpackai.com/docs) • [Enterprise Edition](#-tensorpackai-enterprise) • [Bug Tracker](https://github.com/tensorpackai/tensorpackai-community/issues)
+
+<br>
+
+<p align="center">
+  <img src="assets/cli-demo.svg" alt="TensorPackAI Live Telemetry Terminal" width="840" />
+</p>
 
 </div>
 
@@ -192,6 +200,12 @@ To request an Enterprise trial or benchmark evaluation for your datacenter:
 ## 🔍 Search & Discovery Keywords
 
 `vllm energy optimization` • `vllm power management` • `vllm dvfs` • `triton inference server energy` • `llm inference power consumption` • `joules per token` • `tokens per watt` • `gpu energy telemetry` • `prometheus nvml exporter` • `nvidia h100 power capping` • `nvidia a100 clock locking` • `nvidia b200 power efficiency` • `sustainable ai inference` • `green computing llm` • `cloud gpu cost reduction` • `prefill decode phase separation` • `datacenter carbon footprint reduction`
+
+---
+
+## ⭐ Support Open Source Green AI
+
+If you find TensorPackAI useful for monitoring or optimizing your GPU clusters, please consider giving it a **Star on GitHub** ⭐ — it helps the project reach more AI infrastructure and ML systems engineers!
 
 ---
 
