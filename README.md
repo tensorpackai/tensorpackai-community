@@ -20,7 +20,7 @@
 <br>
 
 <p align="center">
-  <img src="assets/cli-demo.svg" alt="TensorPackAI Live Telemetry Terminal" width="840" />
+  <img src="assets/cli-demo.png" alt="TensorPackAI Live Telemetry Terminal" width="840" />
 </p>
 
 </div>
